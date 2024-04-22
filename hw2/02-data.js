@@ -1,3 +1,5 @@
+export { characters };
+
 const characters = [
   {
     id: 1,

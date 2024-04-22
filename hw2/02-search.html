@@ -6,18 +6,25 @@
     <title>02 - Search</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
-    <script defer src="02-data.js"></script>
-    <script defer src="02-search.js"></script>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <script type="module" defer src="02-data.js"></script>
+    <script type="module" defer src="02-search.js"></script>
   </head>
-  <body>
+  <body class="bg-light">
     <main>
-      <h1>Exercise 02 - Search</h1>
-      <div>
-        <label for="userInput">Search: </label>
-        <input type="text" id="userInput" />
-        <input type="button" value="Search Character: " />
+      <h1 class="d-flex justify-content-center my-4">Exercise 02 - Search</h1>
+      <div class="d-flex justify-content-center mb-5">
+        <label for="userInput" class="d-none">Search: </label>
+        <input type="text" id="userInput" class="ps-2" style="width: 180px" />
+        <input
+          type="button"
+          id="searchButton"
+          value="Search"
+          class="btn btn-primary ms-1"
+        />
       </div>
+      <div id="searchResults" class="d-flex justify-content-center"></div>
     </main>
   </body>
 </html>
