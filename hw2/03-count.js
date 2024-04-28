@@ -24,12 +24,12 @@ const hightlightGivenTextBasedOnUserInput =
       const givenText = givenTextDiv.innerHTML;
 
       // Create regular expression
-      const regex = new RegExp(`[^\\w]${userInput}[^\\w]`, 'gi');
+      const regex = new RegExp(`\\b(${userInput})\\b`, 'gi');
 
       // Replace given text with highlighted user input value
       let highlightedText = givenText.replaceAll(
         regex,
-        `<mark style="background-color: yellow;" class="p-0">${userInput}</mark>`
+        `<mark style="background-color: yellow;" class="p-0">$1</mark>`
       );
       givenTextDiv.innerHTML = highlightedText;
     }
