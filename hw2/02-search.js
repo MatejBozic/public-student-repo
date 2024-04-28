@@ -1,11 +1,11 @@
 import { characters } from './02-data.js';
 
 const searchButton = document.getElementById('searchButton');
-const handleClick = function handleClick() {
+const handleSearchButtonClick = function handleSearchButtonClick() {
   clearSearchResults();
   generateSearchResults();
 };
-searchButton.addEventListener('click', handleClick);
+searchButton.addEventListener('click', handleSearchButtonClick);
 
 const clearSearchResults = function clearSearchResults() {
   const searchResults = document.getElementById('searchResults');
