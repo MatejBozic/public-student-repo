@@ -78,13 +78,13 @@ const createCardForCharacter = function createCardForCharacter(character) {
   cardTitle.setAttribute('class', 'card-title fs-5');
   cardTitle.innerHTML = character.name.replace(
     userInput.value,
-    '<mark style="background-color: yellow;">' + userInput.value + '</mark>'
+    `<mark style="background-color: yellow;">${userInput.value}</mark>`
   ); // highlights the part of the character name that the user input into the search bar
   cardBody.append(cardTitle);
 
   const cardText = document.createElement('p');
   cardText.setAttribute('class', 'card-text');
-  cardText.innerHTML = 'Birth year: ' + character.birth_year;
+  cardText.innerHTML = `Birth year: ${character.birth_year}`;
   cardBody.append(cardText);
 
   return card;
