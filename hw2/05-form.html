@@ -11,18 +11,20 @@
     />
 
     <script defer src="05-form.js"></script>
+    <style>
+      .formWidth {
+        width: 600px;
+      }
+    </style>
   </head>
   <body class="bg-dark">
     <main class="d-flex justify-content-center mt-5">
       <form
         id="form"
         method="POST"
-        class="rounded bg-light px-3 pb-4"
-        style="width: 600px"
+        class="rounded bg-light px-3 pb-4 formWidth"
       >
-        <h4 class="d-flex justify-content-center my-4 fs-1">
-          Exercise 05 - Form
-        </h4>
+        <h1 class="d-flex justify-content-center my-4">Exercise 05 - Form</h1>
         <div>
           <label for="fullname" class="form-check-label fw-bold mb-2"
             >Full Name:</label
@@ -122,9 +124,9 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">
+            <h2 class="modal-title fs-4" id="staticBackdropLabel">
               User's Form Inputs
-            </h5>
+            </h2>
             <button
               type="button"
               class="btn-close"
@@ -133,17 +135,17 @@
             ></button>
           </div>
           <div class="modal-body ms-3" id="modalBody">
-            <h5>Full Name</h5>
+            <h2 class="fs-4">Full Name</h2>
             <div id="modalFullname" class="mb-4"></div>
-            <h5>Email</h5>
+            <h2 class="fs-4">Email</h2>
             <div id="modalEmail" class="mb-4"></div>
-            <h5>Registration Status</h5>
+            <h2 class="fs-4">Registration Status</h2>
             <div id="modalRegistrationStatus" class="mb-4"></div>
-            <h5>Courses Taken</h5>
+            <h2 class="fs-4">Courses Taken</h2>
             <div id="modalCourseProgrammingLanguages"></div>
             <div id="modalCourseOperatingSystems"></div>
             <div id="modalCourseFullStackWebDevelopment" class="mb-4"></div>
-            <h5>Anything Else</h5>
+            <h2 class="fs-4">Anything Else</h2>
             <div id="modalAnythingElse" class="mb-4"></div>
           </div>
           <div class="modal-footer">
