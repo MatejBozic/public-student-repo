@@ -10,7 +10,7 @@ searchButton.addEventListener('click', handleSearchButtonClick);
 const clearSearchResults = function clearSearchResults() {
   const searchResults = document.getElementById('searchResults');
   if (searchResults !== null) {
-    searchResults.remove();
+    searchResults.innerHTML = '';
   }
 };
 
