@@ -29,34 +29,39 @@ const insertUsersFormInputsIntoModal =
     // Courses - Programming Languages
     const programmingLanguages = document.getElementById(
       'programmingLanguages'
-    ).checked;
+    );
     const modalCourseProgrammingLanguages = document.getElementById(
       'modalCourseProgrammingLanguages'
     );
-    if (isChecked(programmingLanguages)) {
+    if (programmingLanguages.checked) {
       modalCourseProgrammingLanguages.innerHTML = 'Programming Languages';
+    } else {
+      modalCourseProgrammingLanguages.innerHTML = '';
     }
 
     // Courses - Operating Systems
-    const operatingSystems =
-      document.getElementById('operatingSystems').checked;
+    const operatingSystems = document.getElementById('operatingSystems');
     const modalCourseOperatingSystems = document.getElementById(
       'modalCourseOperatingSystems'
     );
-    if (isChecked(operatingSystems)) {
+    if (operatingSystems.checked) {
       modalCourseOperatingSystems.innerHTML = 'Operating Systems';
+    } else {
+      modalCourseOperatingSystems.innerHTML = '';
     }
 
     // Courses - Full Stack Web Development
     const fullStackWebDevelopment = document.getElementById(
       'fullStackWebDevelopment'
-    ).checked;
+    );
     const modalCourseFullStackWebDevelopment = document.getElementById(
       'modalCourseFullStackWebDevelopment'
     );
-    if (isChecked(fullStackWebDevelopment)) {
+    if (fullStackWebDevelopment.checked) {
       modalCourseFullStackWebDevelopment.innerHTML =
         'Full Stack Web Development';
+    } else {
+      modalCourseFullStackWebDevelopment.innerHTML = '';
     }
 
     // Anything Else
@@ -64,11 +69,3 @@ const insertUsersFormInputsIntoModal =
     const modalAnythingElse = document.getElementById('modalAnythingElse');
     modalAnythingElse.innerText = `${anythingElse}`;
   };
-
-const isChecked = function isChecked(course) {
-  if (course === true) {
-    return true;
-  } else {
-    return false;
-  }
-};
