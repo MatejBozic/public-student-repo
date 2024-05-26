@@ -62,7 +62,7 @@ const PieChart = ({ relevantData }) => {
   );
 };
 
-export default function Custom({ data }) {
+export default function GDP({ data }) {
   return (
     <div>
       <div className="d-flex justify-content-center mt-3 mb-2">

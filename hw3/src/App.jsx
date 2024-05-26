@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './routes/Home';
 import List from './routes/List';
 import Population from './routes/Population';
-import Custom from './routes/GDP';
+import GDP from './routes/GDP';
 import axios from 'axios';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -35,8 +35,8 @@ function App() {
             <Nav.Link eventKey="link-2" href="/population">
               Population
             </Nav.Link>
-            <Nav.Link eventKey="link-3" href="/custom">
-              Custom
+            <Nav.Link eventKey="link-3" href="/gdp">
+              GDP
             </Nav.Link>
           </Nav>
         </Container>
@@ -45,7 +45,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/list" element={<List data={data} />} />
         <Route path="/population" element={<Population data={data} />} />
-        <Route path="/custom" element={<Custom data={data} />} />
+        <Route path="/gdp" element={<GDP data={data} />} />
       </Routes>
     </>
   );
