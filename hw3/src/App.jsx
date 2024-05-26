@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './routes/Home';
 import List from './routes/List';
 import Population from './routes/Population';
-import Custom from './routes/Custom';
+import Custom from './routes/GDP';
 import axios from 'axios';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
@@ -27,10 +27,7 @@ function App() {
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container className="d-block">
-          <Nav
-            fill
-            className="justify-content-center me-auto"
-          >
+          <Nav fill className="justify-content-center me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link eventKey="link-1" href="/list">
               List
